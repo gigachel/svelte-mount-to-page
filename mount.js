@@ -1,4 +1,4 @@
-export default function (selector, Component) {
+export default function mount (selector, Component) {
   function myEval (str) { return new Function('return ' + str)(); } // https://github.com/rollup/rollup/wiki/Troubleshooting#avoiding-eval (var myEval = eval)
 
   var searchJsExpression = new RegExp('\{((?:[^}{]+|\{(?:[^}{]+|\{[^}{]*\})*\})*)\}', 'g'); // visual regexp: https://regexper.com/#%2F%5C%7B%28%28%3F%3A%5B%5E%7D%7B%5D%2B%7C%5C%7B%28%3F%3A%5B%5E%7D%7B%5D%2B%7C%5C%7B%5B%5E%7D%7B%5D*%5C%7D%29*%5C%7D%29*%29%5C%7D%2Fg
