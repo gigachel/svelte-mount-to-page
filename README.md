@@ -2,9 +2,7 @@
 
 main.js
 ```js
-import mountToPage from './mountToPage.js';
-
-mountToPage('my-component', MyComponent);
+mountToPage('my-component', MyComponent); // mount svelte component MyComponent to html element my-component
 ```
 
 index.html
